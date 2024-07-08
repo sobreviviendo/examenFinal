@@ -1,0 +1,593 @@
+:root{
+    --yellow:#f9d806;
+    --ligth-yellow: #ffee80;
+    --black: #130f40;
+    --ligth-color: #666;
+
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+
+
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    background-color: var(--ligth-yellow);
+    color: var(--black);
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+
+.btn:hover{
+    background-color: var(--yellow);
+}
+
+
+
+
+
+
+
+.header #login-btn i{
+    font-size: 2.5rem;
+    color: var(--ligth-yellow);
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+/*aqui voy a implementar el responsive*/
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+}
+
+.header{
+    padding: 2rem;
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:450){
+    html{
+        font-size: 55%;
+    }
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding: 7rem;
+}
+
+
+
+
+header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    z-index: 999;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+}
+
+
+
+
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+
+
+
+
+
+.header .logo span{
+    color: var(--yellow);
+}
+
+
+
+
+
+#menubar.fa-bars{
+    transform: rotate(180deg);
+}
+
+
+
+
+.login-form-container{
+    position: fixed;
+    top: -150;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.login-form-container .active{
+    top: 0;
+    opacity: 1;
+}
+
+
+
+
+
+.login-form-container form{
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    background: var(--ligth-color);
+    border:var(--border);
+    text-align: center;
+    width: 40rem;
+}
+
+
+
+
+
+.login-form-container form .buttons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+
+
+
+.login-form-container form .btn{
+    display: block;
+    width: 100%;
+    margin: .5rem 0;
+}
+
+
+
+
+
+
+.login-form-container form h3{
+    color: var(--black);
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+
+
+
+.login-form-container form .box{
+    margin: .7rem 0;
+    width: 100%;
+    text-transform: none;
+    color: var(--black);
+    font-size: 1.2rem;
+    padding: 1rem 1.2rem;
+    border: var(--border);
+    border-radius: 0.5rem;
+
+}
+
+
+
+
+
+
+.header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black);
+}
+
+
+
+
+
+
+.header .navbar a:hover{
+    color: var(--yellow);
+}
+
+
+
+
+.login-form-container form p{
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--ligth-color);
+}
+
+
+
+
+.login-form-container form p a{
+    color: var(--yellow);
+    text-decoration: underline;
+
+}
+
+
+
+
+.login-form-container form #close-login-btn{
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+
+section{
+    padding: 2rem 9%;
+
+
+}
+
+
+.home{
+    padding-top: 10rem;
+    text-align: center;
+    overflow-x: hidden;
+
+}
+
+
+
+.home h1{
+    font-size: 7.5rem;
+    text-transform: uppercase;
+    color: #130f40;
+
+}
+
+.home img{
+    width: 100%;
+    margin: 1rem 0;
+
+}
+
+
+.icon-container{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,margin(1fr));
+    gap: 1.5rem;
+    background-color: #eee;
+}
+.icon-container .icons{
+display: flex;
+align-items: center;
+gap: 1.5rem;
+padding: 2rem;
+background-color: #fff;
+box-shadow: var(--box-shadow);
+border-radius: 5rem;
+
+
+
+
+
+
+}
+
+
+
+
+
+.icon-container .icons i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    background-color: #eee;
+    color: var(--black);
+    text-align: center;
+}
+
+
+
+.icon-container .icons h3{
+    color: var(--yellow);
+    font-size: 2.5rem;
+}
+
+
+
+.icon-container .icons .content p{
+    color: var(--black);
+    font-size: 1.5rem;
+}
+
+
+
+.icon-container .icons:hover i{
+    color: var(--yellow);
+}
+
+
+.icon-container .icons:hover h3{
+    color: var(--yellow);
+}
+
+
+
+.icon-container .icons:hover .content p{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 4.5rem;
+    color: var(--black);
+}
+.vehical .heading span{
+    position: relative;
+    z-index: 0;
+}
+
+.vehical .heading span::before{
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: var(--yellow);
+    clip-path: polygon(0% 90%, 100% 80%, 100% 100%, 0% 100%);
+}
+
+
+.vehical .slider{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    overflow-x: hidden;
+    text-align: center;
+    font-size: 1.2rem;
+    color:var(--black);
+}
+
+
+.vehical .slider .wrapper {
+    position: relative;
+}
+
+
+
+
+
+
+.vehical .slider .wrapper .preNext{
+    cursor: pointer;
+    font-size: 5rem;
+    text-align: center;
+    height: 60%;
+    color: var(--black);
+    z-index: 1;
+}
+
+
+
+
+.vehical .slider .wrapper .preNext#preBtn{
+    position: absolute;
+    padding-top: 10%;
+    width: 30%;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+
+
+.vehical .slider .wrapper .preNext#preBtn{
+    position: absolute;
+    padding-top: 10%;
+    width: 30%;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+.vehical .slider .activeCircle .fa-circle{
+    color: var(--yellow);
+    padding-top: 3rem;
+
+
+}
+
+
+
+
+.services .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,mimax(35rem, 1fr));
+    gap: 1.5rem;
+
+}
+
+
+.services .box-container .box{
+    text-align: center;
+    padding: 2rem;
+    border-radius: 5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+}
+
+.services .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    background: var(--yellow);
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.services .box-container .box h3{
+    color: var(--black);
+    font-size: 2.2rem;
+}
+
+
+.services .box-container .box p{
+    color: var(--ligth-color);
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+
+.services .box-container .box:hover{
+    background: var(--black);
+}
+
+
+.services .box-container .box:hover h3{
+    color: #ffff;
+}
+
+
+.services .box-container .box:hover p{
+    color: #ffff;
+}
+
+
+
+
+
+
+.vehical .slider .activeCircle .fa-solid{
+    font-size: 1.2rem;
+}
+
+
+.vehical .slider .activeCircle .wrapper-box{
+    display: flex;
+    transition: all .2s ease-in-out;
+    margin-left: 24vw;
+
+}
+
+
+
+.vehical .slider .activeCircle .wrapper-box .box{
+    width: 300px;
+    text-align: center;
+
+}
+
+
+
+.vehical .slider .activeCircle .wrapper-box .img{
+    cursor: pointer;
+    width: 250px;
+    opacity: .5s;
+}
+
+
+
+.vehical .slider .activeCircle .wrapper-box .box .content{
+    margin-top: 5rem;
+    display: none;
+}
+
+
+.vehical .slider .activeCircle .wrapper-box .box .content i{
+   color: var(--black);
+}
+
+
+
+
+
+
+
+.vehical .slider .activeCircle .wrapper-box .box{
+    width: 100%;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+
+.vehical .slider .activeCircle .wrapper-box .box.active img{
+    transform: scale(1.8);
+    opacity: 1;
+}
+
+
+.vehical .slider .activeCircle .wrapper-box .box .active .content{
+    width: 100%;
+    display: block;
+    font-size: 2rem;
+}
+
